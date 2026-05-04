@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vinay | Portfolio</title>
+<title>Vinay | Developer</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<div class="cursor"></div>
+
+<!-- NAV -->
 <nav>
     <div class="logo">VINAY<span>.</span></div>
     <div>
@@ -22,13 +24,10 @@
 
 <!-- HERO -->
 <header class="hero">
-    <h1>Hello, I'm <span>Vinay</span></h1>
+    <h1>I build <span>next-level web apps</span></h1>
     <p class="typing"></p>
 
-    <div class="buttons">
-        <button onclick="scrollToSection('projects')">View Work</button>
-        <a href="#" class="resume-btn">Download Resume</a>
-    </div>
+    <button onclick="scrollToSection('projects')">Explore</button>
 </header>
 
 <!-- PROJECTS -->
@@ -37,24 +36,24 @@
 
     <div class="grid">
 
-        <div class="card">
+        <div class="card" data-tilt>
             <h3>BloodLife</h3>
-            <p>Blood donation system connecting donors & patients.</p>
+            <p>Smart blood donation system.</p>
         </div>
 
-        <div class="card">
-            <h3>Online Voting System</h3>
-            <p>Secure voting system with authentication.</p>
+        <div class="card" data-tilt>
+            <h3>E-Commerce</h3>
+            <p>Full stack shopping platform.</p>
         </div>
 
-        <div class="card">
-            <h3>E-Commerce Website</h3>
-            <p>Shopping platform with cart & checkout.</p>
+        <div class="card" data-tilt>
+            <h3>Voting System</h3>
+            <p>Secure online voting system.</p>
         </div>
 
-        <div class="card">
-            <h3>Student Management</h3>
-            <p>Manage student data and results.</p>
+        <div class="card" data-tilt>
+            <h3>Student Manager</h3>
+            <p>Manage students & results.</p>
         </div>
 
     </div>
@@ -63,14 +62,15 @@
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: vinayvk2005@email.com</p>
+    <p>Email: yourname@email.com</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2026 Vinay</p>
 </footer>
 
+<!-- TILT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 <script src="script.js"></script>
 
 </body>
