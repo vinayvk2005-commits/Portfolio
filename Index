@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinay | Developer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">VINAY<span>.</span></div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Hello, I'm <span>Vinay</span></h1>
+    <h2 class="typing"></h2>
+    <button onclick="scrollToSection('projects')">View Work</button>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I build modern web apps using PHP, MySQL & JavaScript.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="card" data-tilt>
+            <h3>BloodLife</h3>
+            <p>Smart blood donation system.</p>
+        </div>
+
+        <div class="card" data-tilt>
+            <h3>Portfolio</h3>
+            <p>Modern animated portfolio.</p>
+        </div>
+
+        <div class="card" data-tilt>
+            <h3>More Coming</h3>
+            <p>New projects soon.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Vinay</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
