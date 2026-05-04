@@ -1,92 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinay | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vinay | Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <nav>
-        <div class="logo">VINAY.SYS</div>
-        <div class="nav-links">
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">VINAY<span>.</span></div>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>I build <span>modern web apps</span></h1>
+    <p class="typing"></p>
+    <button onclick="scrollToSection('projects')">Explore Work</button>
+</header>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="grid">
+
+        <div class="card" data-aos="zoom-in">
+            <h3>BloodLife</h3>
+            <p>Blood donation system connecting donors & hospitals.</p>
         </div>
-    </nav>
 
-    <header>
-        <div class="hero">
-            <p class="mono-tag">// 3rd Year BCA @ St Aloysius</p>
-            <h1>Full Stack <span class="accent">Developer</span> & Engineer.</h1>
-            <p class="bio">I specialize in Python automation and backend architecture, with a strong foundation in systems programming and enterprise web technologies.</p>
+        <div class="card" data-aos="zoom-in">
+            <h3>Online Voting System</h3>
+            <p>Secure voting platform using authentication & database.</p>
         </div>
-    </header>
 
-    <section id="skills">
-        <h2 class="label">Technical Stack</h2>
-        <div class="skill-grid">
-            <div class="skill-category">
-                <h3>Core Languages</h3>
-                <p>Python, Java (Advanced), C, C++, C#</p>
-            </div>
-            <div class="skill-category">
-                <h3>Web Stack</h3>
-                <p>PHP, MySQL, JavaScript, HTML5, CSS3</p>
-            </div>
+        <div class="card" data-aos="zoom-in">
+            <h3>E-Commerce Website</h3>
+            <p>Full stack shopping system with cart & payment flow.</p>
         </div>
-    </section>
 
-    <section id="projects">
-        <h2 class="label">Selected Projects</h2>
-        
-        <div class="project-list">
-            <div class="project-row">
-                <span class="p-num">01</span>
-                <div class="p-info">
-                    <h3>BloodLife</h3>
-                    <p>Comprehensive Blood Donation Management System using PHP and MySQL.</p>
-                </div>
-                <div class="p-tech">PHP / SQL</div>
-            </div>
-
-            <div class="project-row">
-                <span class="p-num">02</span>
-                <div class="p-info">
-                    <h3>SwiftQuery</h3>
-                    <p>Python-based database optimization and management utility.</p>
-                </div>
-                <div class="p-tech">Python / MySQL</div>
-            </div>
-
-            <div class="project-row">
-                <span class="p-num">03</span>
-                <div class="p-info">
-                    <h3>Java Enterprise Logic</h3>
-                    <p>Developing scalable backend components using Advanced Java principles.</p>
-                </div>
-                <div class="p-tech">Java / OOP</div>
-            </div>
+        <div class="card" data-aos="zoom-in">
+            <h3>Student Management System</h3>
+            <p>Manage students, marks, attendance using PHP + MySQL.</p>
         </div>
-    </section>
 
-    <section id="contact">
-        <div class="contact-box">
-            <h2>Let's Build Something.</h2>
-            <div class="details">
-                <p>Name: <span>Vinay</span></p>
-                <p>Phone: <span>+91 YourNumber</span></p>
-                <p>Email: <span>YourGmail@gmail.com</span></p>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>TERMINAL v1.0 | 2026</p>
-    </footer>
+<!-- CONTACT -->
+<section id="contact">
+    <h2 data-aos="fade-up">Contact</h2>
+    <p>Email: yourname@email.com</p>
+</section>
 
-    <script src="script.js"></script>
+<footer>
+    <p>© 2026 Vinay</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
