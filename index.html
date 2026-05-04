@@ -5,74 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor-glow"></div>
-    
     <nav>
-        <div class="logo">V<span>N</span></div>
+        <div class="logo">VINAY.SYS</div>
         <div class="nav-links">
-            <a href="#projects">Work</a>
-            <a href="#about">About</a>
-            <a href="#contact" class="nav-btn">Let's Talk</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <header>
-        <div class="hero-box">
-            <span class="status-badge">Available for Work</span>
-            <h1>Architecting <span class="accent">Robust</span> Backends</h1>
-            <p>BCA Specialist @ St Aloysius College. I build high-performance web systems using PHP, MySQL, and Python.</p>
+        <div class="hero">
+            <p class="mono-tag">// 3rd Year BCA @ St Aloysius</p>
+            <h1>Full Stack <span class="accent">Developer</span> & Engineer.</h1>
+            <p class="bio">I specialize in Python automation and backend architecture, with a strong foundation in systems programming and enterprise web technologies.</p>
         </div>
     </header>
 
-    <section id="projects">
-        <div class="section-header">
-            <h2>Selected Works</h2>
-            <p>Real-world engineering solutions.</p>
+    <section id="skills">
+        <h2 class="label">Technical Stack</h2>
+        <div class="skill-grid">
+            <div class="skill-category">
+                <h3>Core Languages</h3>
+                <p>Python, Java (Advanced), C, C++, C#</p>
+            </div>
+            <div class="skill-category">
+                <h3>Web Stack</h3>
+                <p>PHP, MySQL, JavaScript, HTML5, CSS3</p>
+            </div>
         </div>
+    </section>
 
-        <div class="bento-grid">
-            <div class="bento-card large">
-                <div class="card-content">
-                    <h3>BloodLife System</h3>
-                    <p>A full-stack blood donation platform with real-time inventory and donor mapping.</p>
-                    <div class="tags"><span>PHP</span><span>MySQL</span><span>AJAX</span></div>
+    <section id="projects">
+        <h2 class="label">Selected Projects</h2>
+        
+        <div class="project-list">
+            <div class="project-row">
+                <span class="p-num">01</span>
+                <div class="p-info">
+                    <h3>BloodLife</h3>
+                    <p>Comprehensive Blood Donation Management System using PHP and MySQL.</p>
                 </div>
+                <div class="p-tech">PHP / SQL</div>
             </div>
 
-            <div class="bento-card">
-                <div class="card-content">
+            <div class="project-row">
+                <span class="p-num">02</span>
+                <div class="p-info">
                     <h3>SwiftQuery</h3>
-                    <p>A custom-built SQL dashboard to manage database schemas without using phpMyAdmin.</p>
-                    <div class="tags"><span>PHP</span><span>PDO</span></div>
+                    <p>Python-based database optimization and management utility.</p>
                 </div>
+                <div class="p-tech">Python / MySQL</div>
             </div>
 
-            <div class="bento-card">
-                <div class="card-content">
-                    <h3>EduTrack API</h3>
-                    <p>JSON-based REST API for college attendance tracking systems.</p>
-                    <div class="tags"><span>Python</span><span>Flask</span></div>
+            <div class="project-row">
+                <span class="p-num">03</span>
+                <div class="p-info">
+                    <h3>Java Enterprise Logic</h3>
+                    <p>Developing scalable backend components using Advanced Java principles.</p>
                 </div>
+                <div class="p-tech">Java / OOP</div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact-card">
-            <h2>Start a Project</h2>
-            <p>Name: Vinay</p>
-            <p>Phone: [Your Phone]</p>
-            <p>Email: [Your Gmail]</p>
+        <div class="contact-box">
+            <h2>Let's Build Something.</h2>
+            <div class="details">
+                <p>Name: <span>Vinay</span></p>
+                <p>Phone: <span>+91 YourNumber</span></p>
+                <p>Email: <span>YourGmail@gmail.com</span></p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>Built with 0.1% luck and 99.9% Logic</p>
+        <p>TERMINAL v1.0 | 2026</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
