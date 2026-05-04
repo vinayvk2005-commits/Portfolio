@@ -1,0 +1,90 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body {
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* NAV */
+nav {
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.logo span { color:#915eff; }
+
+.nav-links a {
+margin-left:20px;
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+.hero {
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(120deg,#020617,#1e293b);
+}
+
+.hero span { color:#915eff; }
+
+.hero button {
+margin-top:20px;
+padding:10px 20px;
+background:#915eff;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* TYPING TEXT */
+.typing {
+margin-top:10px;
+color:#aaa;
+height:20px;
+}
+
+/* SECTIONS */
+section {
+padding:60px 10%;
+text-align:center;
+}
+
+/* GRID */
+.grid {
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* CARD */
+.card {
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+width:260px;
+transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer {
+text-align:center;
+padding:20px;
+background:#020617;
+}
