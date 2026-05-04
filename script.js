@@ -1,34 +1,39 @@
 // Smooth scroll
 function scrollToSection(id){
-document.getElementById(id).scrollIntoView({
-behavior:"smooth"
-});
+document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
 
 // Typing animation
-const text = ["Full Stack Developer","BCA Student","Problem Solver"];
-let i=0,j=0,current="",del=false;
+const words=["Full Stack Developer","BCA Student","Problem Solver"];
+let i=0,j=0,text="",del=false;
 
 function type(){
-if(i<text.length){
-if(!del && j<=text[i].length){
-current=text[i].substring(0,j++);
+if(i<words.length){
+if(!del && j<=words[i].length){
+text=words[i].substring(0,j++);
 }
 else if(del && j>=0){
-current=text[i].substring(0,j--);
+text=words[i].substring(0,j--);
 }
 
-document.querySelector(".typing").textContent=current;
+document.querySelector(".typing").textContent=text;
 
-if(j==text[i].length) del=true;
-if(j==0 && del){ del=false; i++; }
+if(j==words[i].length) del=true;
+if(j==0 && del){del=false;i++;}
 }else i=0;
 
 setTimeout(type,100);
 }
 type();
 
-// AOS init
-AOS.init({
-duration:1000
+// AOS
+AOS.init({duration:1000});
+
+// PARTICLES
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 2 }
+  }
 });
