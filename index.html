@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vinay | Developer</title>
+<title>Vinay | Full Stack Developer</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- AOS Animation -->
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
 
-<!-- NAV -->
+<div id="particles-js"></div>
+
 <nav>
     <div class="logo">VINAY<span>.</span></div>
     <div>
@@ -23,14 +24,16 @@
     </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
     <h1>I build <span>modern web apps</span></h1>
     <p class="typing"></p>
-    <button onclick="scrollToSection('projects')">Explore Work</button>
+
+    <div class="buttons">
+        <button onclick="scrollToSection('projects')">View Work</button>
+        <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
 </header>
 
-<!-- PROJECTS -->
 <section id="projects">
     <h2 data-aos="fade-up">Projects</h2>
 
@@ -38,28 +41,27 @@
 
         <div class="card" data-aos="zoom-in">
             <h3>BloodLife</h3>
-            <p>Blood donation system connecting donors & hospitals.</p>
+            <p>Blood donation system with donor-patient matching.</p>
         </div>
 
         <div class="card" data-aos="zoom-in">
             <h3>Online Voting System</h3>
-            <p>Secure voting platform using authentication & database.</p>
+            <p>Secure voting system with login & validation.</p>
         </div>
 
         <div class="card" data-aos="zoom-in">
             <h3>E-Commerce Website</h3>
-            <p>Full stack shopping system with cart & payment flow.</p>
+            <p>Shopping platform with cart & checkout.</p>
         </div>
 
         <div class="card" data-aos="zoom-in">
-            <h3>Student Management System</h3>
-            <p>Manage students, marks, attendance using PHP + MySQL.</p>
+            <h3>Student Management</h3>
+            <p>Manage students, attendance & results.</p>
         </div>
 
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2 data-aos="fade-up">Contact</h2>
     <p>Email: yourname@email.com</p>
@@ -69,6 +71,8 @@
     <p>© 2026 Vinay</p>
 </footer>
 
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 
