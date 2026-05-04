@@ -1,39 +1,35 @@
 // Smooth scroll
 function scrollToSection(id){
-document.getElementById(id).scrollIntoView({behavior:"smooth"});
+document.getElementById(id).scrollIntoView({
+behavior:"smooth"
+});
 }
 
-// Typing animation
-const words=["Full Stack Developer","BCA Student","Problem Solver"];
-let i=0,j=0,text="",del=false;
+// Typing effect
+const words = ["Full Stack Developer", "BCA Student", "Web Developer"];
+let i = 0, j = 0, current = "", deleting = false;
 
 function type(){
-if(i<words.length){
-if(!del && j<=words[i].length){
-text=words[i].substring(0,j++);
+if(i < words.length){
+if(!deleting && j <= words[i].length){
+current = words[i].substring(0,j++);
 }
-else if(del && j>=0){
-text=words[i].substring(0,j--);
+else if(deleting && j >= 0){
+current = words[i].substring(0,j--);
 }
 
-document.querySelector(".typing").textContent=text;
+document.querySelector(".typing").textContent = current;
 
-if(j==words[i].length) del=true;
-if(j==0 && del){del=false;i++;}
-}else i=0;
+if(j == words[i].length) deleting = true;
+if(j == 0 && deleting){
+deleting = false;
+i++;
+}
+}else{
+i = 0;
+}
 
 setTimeout(type,100);
 }
+
 type();
-
-// AOS
-AOS.init({duration:1000});
-
-// PARTICLES
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 80 },
-    size: { value: 3 },
-    move: { speed: 2 }
-  }
-});
