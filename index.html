@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vinay Mudenagudi | Full Stack Developer</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <link rel="stylesheet" href="style.css">
 
-<script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<div class="cursor"></div>
+<div class="loader">
+<div class="spinner"></div>
+</div>
 
-<div class="bg-animation">
-<div class="circle c1"></div>
-<div class="circle c2"></div>
-<div class="circle c3"></div>
+<div class="background">
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
 </div>
 
 <nav class="navbar">
@@ -31,12 +36,14 @@
 VINAY<span>.</span>
 </div>
 
-<ul class="nav-links">
+<ul>
+
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
@@ -53,21 +60,29 @@ Hi, I'm
 <h2 class="typing"></h2>
 
 <p>
-Final Year BCA Student passionate about Full Stack Development,
-PHP, JavaScript, MySQL and building modern web applications.
+
+Full Stack Developer passionate about building modern,
+scalable web applications and solving real-world problems.
+
 </p>
 
 <div class="hero-buttons">
 
-<a href="#projects" class="btn primary">
+<a href="#projects" class="btn-primary">
 View Projects
 </a>
 
-<a href="resume.pdf" class="btn secondary" target="_blank">
-Download Resume
+<a href="resume.pdf" class="btn-secondary">
+Resume
 </a>
 
 </div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800">
 
 </div>
 
@@ -76,75 +91,112 @@ Download Resume
 <section class="stats">
 
 <div class="stat-card">
-<h3>4+</h3>
-<p>Projects</p>
+<h2>4+</h2>
+<p>Projects Built</p>
 </div>
 
 <div class="stat-card">
-<h3>3+</h3>
+<h2>3+</h2>
 <p>Certifications</p>
 </div>
 
 <div class="stat-card">
-<h3>7.5</h3>
+<h2>7.5</h2>
 <p>CGPA</p>
 </div>
 
 <div class="stat-card">
-<h3>2026</h3>
+<h2>2026</h2>
 <p>Graduate</p>
 </div>
 
 </section>
 
-<section id="about" class="section">
+<section id="about">
 
 <h2 class="section-title">
 About Me
 </h2>
 
-<div class="about-box">
+<div class="glass-card">
 
 <p>
-Enthusiastic and detail-oriented BCA student with strong
-foundations in Full Stack Development, Programming,
-Database Management and Software Engineering.
 
-I enjoy building scalable real-world applications,
-learning new technologies and solving practical problems
-through clean and efficient code.
+I am a BCA Final Year student focused on Full Stack Development,
+JavaScript, PHP, MySQL, REST APIs and modern web technologies.
+
+My goal is to build innovative software solutions that create
+real business value while continuously learning emerging technologies.
+
 </p>
 
 </div>
 
 </section>
 
-<section id="skills" class="section">
+<section id="skills">
 
 <h2 class="section-title">
-Technical Skills
+Skills
 </h2>
 
 <div class="skills-grid">
 
-<div class="skill">HTML5</div>
-<div class="skill">CSS3</div>
-<div class="skill">JavaScript</div>
-<div class="skill">PHP</div>
-<div class="skill">MySQL</div>
-<div class="skill">Java</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Power BI</div>
-<div class="skill">REST APIs</div>
-<div class="skill">SQL</div>
-<div class="skill">OOP</div>
+<div class="skill">
+<i class="fab fa-html5"></i>
+HTML5
+</div>
+
+<div class="skill">
+<i class="fab fa-css3-alt"></i>
+CSS3
+</div>
+
+<div class="skill">
+<i class="fab fa-js"></i>
+JavaScript
+</div>
+
+<div class="skill">
+<i class="fab fa-php"></i>
+PHP
+</div>
+
+<div class="skill">
+<i class="fas fa-database"></i>
+MySQL
+</div>
+
+<div class="skill">
+<i class="fab fa-java"></i>
+Java
+</div>
+
+<div class="skill">
+<i class="fab fa-git-alt"></i>
+Git
+</div>
+
+<div class="skill">
+<i class="fab fa-github"></i>
+GitHub
+</div>
+
+<div class="skill">
+<i class="fas fa-chart-bar"></i>
+Power BI
+</div>
+
+<div class="skill">
+<i class="fas fa-code"></i>
+REST API
+</div>
 
 </div>
 
 </section>
 
-<section id="projects" class="section">
+<section id="projects">
 
 <h2 class="section-title">
 Featured Projects
@@ -154,7 +206,7 @@ Featured Projects
 
 <div class="project-card">
 
-<img src="assets/bloodlife.jpg">
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800">
 
 <div class="project-content">
 
@@ -163,11 +215,11 @@ Blood Donation Camp Management
 </h3>
 
 <p>
-Full Stack PHP + MySQL application for donor registration,
-camp scheduling and blood inventory tracking.
+Full stack PHP & MySQL system for donor registration,
+camp scheduling and inventory management.
 </p>
 
-<div class="project-buttons">
+<div class="project-links">
 
 <a href="#">Live</a>
 <a href="#">GitHub</a>
@@ -180,7 +232,7 @@ camp scheduling and blood inventory tracking.
 
 <div class="project-card">
 
-<img src="assets/recommender.jpg">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800">
 
 <div class="project-content">
 
@@ -189,11 +241,11 @@ Smart Nearby Places Recommender
 </h3>
 
 <p>
-Location-based web application using Geolocation API
-to recommend nearby restaurants, hospitals and parks.
+Location-based application using Geolocation API
+to recommend nearby places in real time.
 </p>
 
-<div class="project-buttons">
+<div class="project-links">
 
 <a href="#">Live</a>
 <a href="#">GitHub</a>
@@ -206,7 +258,7 @@ to recommend nearby restaurants, hospitals and parks.
 
 <div class="project-card">
 
-<img src="assets/ecommerce.jpg">
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800">
 
 <div class="project-content">
 
@@ -215,11 +267,11 @@ E-Commerce Application
 </h3>
 
 <p>
-Full Stack shopping platform with cart system,
-authentication and admin dashboard.
+Shopping platform with authentication,
+shopping cart and admin dashboard.
 </p>
 
-<div class="project-buttons">
+<div class="project-links">
 
 <a href="#">Live</a>
 <a href="#">GitHub</a>
@@ -232,7 +284,7 @@ authentication and admin dashboard.
 
 <div class="project-card">
 
-<img src="assets/portfolio.jpg">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
 
 <div class="project-content">
 
@@ -241,11 +293,11 @@ Developer Portfolio
 </h3>
 
 <p>
-Modern responsive portfolio showcasing skills,
-projects and achievements.
+Responsive personal portfolio showcasing
+skills, achievements and projects.
 </p>
 
-<div class="project-buttons">
+<div class="project-links">
 
 <a href="#">Live</a>
 <a href="#">GitHub</a>
@@ -260,7 +312,7 @@ projects and achievements.
 
 </section>
 
-<section id="education" class="section">
+<section id="education">
 
 <h2 class="section-title">
 Education
@@ -270,19 +322,23 @@ Education
 
 <div class="timeline-item">
 
-<h3>BCA</h3>
+<h3>
+Bachelor of Computer Applications
+</h3>
 
 <span>2023 - 2026</span>
 
 <p>
-St. Aloysius Autonomous College, Mangalore
+St. Aloysius Autonomous College
 </p>
 
 </div>
 
 <div class="timeline-item">
 
-<h3>PUC (CEBA)</h3>
+<h3>
+Pre University (CEBA)
+</h3>
 
 <span>2021 - 2023</span>
 
@@ -296,54 +352,34 @@ St. Aloysius PU College
 
 </section>
 
-<section class="section">
+<section id="contact">
 
 <h2 class="section-title">
-Certifications
+Contact
 </h2>
 
-<div class="certificate-grid">
+<div class="glass-card contact-box">
 
-<div class="certificate">
-Web Programming for Beginners
-</div>
+<p>
+📧 vinayvk2005@gmail.com
+</p>
 
-<div class="certificate">
-HTML CSS PHP CRUD
-</div>
-
-<div class="certificate">
-IBM AI Fundamentals
-</div>
-
-<div class="certificate">
-Power BI Workshop
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="section">
-
-<h2 class="section-title">
-Contact Me
-</h2>
-
-<div class="contact-box">
-
-<p>Email: vinayvk2005@gmail.com</p>
-
-<p>Location: Mangalore, Karnataka</p>
+<p>
+📍 Mangalore, Karnataka
+</p>
 
 <div class="socials">
 
-<a href="https://github.com/vinayvk2005-commits">
-GitHub
+<a href="#">
+<i class="fab fa-github"></i>
 </a>
 
 <a href="#">
-LinkedIn
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
 </a>
 
 </div>
